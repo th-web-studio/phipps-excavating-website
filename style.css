@@ -1,4 +1,3 @@
-/* RESET (IMPORTANT) */
 * {
   margin: 0;
   padding: 0;
@@ -19,33 +18,57 @@ body {
   padding: 0 20px;
 }
 
-/* =========================
-   GLOBAL SPACING CONTROL (KEY FIX)
-========================= */
+/* SECTIONS */
+section {
+  padding: 35px 0;
+}
 
-/* REMOVE ALL DEFAULT HEADING SPACING */
+/* HEADINGS RESET (FIXS EXTRA TOP SPACE) */
 h1, h2, h3, p {
-  margin-top: 0 !important;
-  margin-bottom: 0;
+  margin: 0;
 }
 
-/* FORCE CONTROLLED SPACING ONLY BELOW ELEMENTS */
-h1 {
-  font-size: 42px;
+/* HERO */
+.hero {
+  background: #0B1F3B;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
   margin-bottom: 8px;
 }
 
+.hero p {
+  max-width: 650px;
+  margin: 0 auto 14px;
+  opacity: 0.9;
+}
+
+/* SUBTEXT */
+.subtext {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 8px;
+}
+
+/* TRUST */
+.trust {
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+/* HEADINGS */
 h2 {
-  font-size: 30px;
+  font-size: 28px;
   margin-bottom: 8px;
 }
 
-/* REMOVE TOP GAP ABOVE HEADERS COMPLETELY */
-h1, h2, h3 {
-  padding-top: 0;
-}
-
-/* CLEAN UNDERLINE */
 h2::after {
   content: "";
   display: block;
@@ -56,46 +79,11 @@ h2::after {
   margin-bottom: 12px;
 }
 
-/* PARAGRAPHS */
 p {
   margin-bottom: 8px;
 }
 
-/* =========================
-   SECTIONS (TIGHT MODE)
-========================= */
-
-/* THIS IS WHAT WAS CAUSING MOST OF YOUR WHITESPACE */
-section {
-  padding: 35px 0;
-}
-
-/* HERO (LESS TOP AIR) */
-.hero {
-  background: #0B1F3B;
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.hero p {
-  max-width: 650px;
-  margin: 0 auto 14px;
-  opacity: 0.9;
-}
-
-/* TRUST BAR (VERY TIGHT) */
-.trust {
-  text-align: center;
-  padding: 10px;
-  font-weight: 600;
-  background: #fff;
-  border-bottom: 1px solid #eee;
-}
-
-/* =========================
-   BUTTONS
-========================= */
+/* BUTTONS */
 .btn {
   display: inline-block;
   padding: 12px 20px;
@@ -115,9 +103,12 @@ section {
   color: #0B1F3B;
 }
 
-/* =========================
-   SERVICES GRID
-========================= */
+/* ALT SECTION */
+.alt {
+  background: #F5F7FA;
+}
+
+/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -134,14 +125,7 @@ section {
   box-shadow: 0 6px 18px rgba(0,0,0,0.06);
 }
 
-/* ALT SECTION */
-.alt {
-  background: #F5F7FA;
-}
-
-/* =========================
-   CTA
-========================= */
+/* CTA */
 .cta {
   background: #0B1F3B;
   color: white;
@@ -153,9 +137,7 @@ section {
   color: white;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 footer {
   text-align: center;
   padding: 14px;
@@ -164,9 +146,7 @@ footer {
   font-size: 13px;
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
