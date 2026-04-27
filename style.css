@@ -93,7 +93,7 @@ p {
   color: rgba(255, 255, 255, 0.85);
 }
 
-/* 🔥 LOGO - FORCE SIZE (THIS IS THE IMPORTANT FIX) */
+/* LOGO */
 .logo {
   display: block !important;
   margin: 0 auto 16px auto !important;
@@ -164,6 +164,12 @@ p {
   color: white;
 }
 
+/* 🔥 FIX: CTA TEXT WHITE */
+.cta-text {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
 /* FOOTER */
 footer {
   text-align: center;
@@ -171,6 +177,13 @@ footer {
   background: #111;
   color: white;
   font-size: 13px;
+}
+
+/* 🔥 FIX: FOOTER TEXT WHITE */
+footer,
+footer p {
+  color: #ffffff !important;
+  opacity: 1 !important;
 }
 
 /* 📱 MOBILE */
@@ -184,7 +197,6 @@ footer {
     font-size: 28px;
   }
 
-  /* LOGO MOBILE FORCE SIZE */
   .logo {
     width: 180px !important;
     max-width: 180px !important;
