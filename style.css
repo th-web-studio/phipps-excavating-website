@@ -47,15 +47,16 @@ h2 {
   margin-bottom: 8px;
 }
 
-/* ✅ PROPER CENTERING FIX (stable + clean) */
-.section h2,
-.cta h2 {
-  text-align: center;
+/* CENTER SECTION HEADINGS */
+section.section h2,
+section.cta h2 {
+  text-align: center !important;
+  width: 100%;
 }
 
-/* underline centered correctly */
-.section h2::after,
-.cta h2::after {
+/* CENTER UNDERLINE */
+section.section h2::after,
+section.cta h2::after {
   content: "";
   display: block;
   width: 50px;
@@ -79,20 +80,19 @@ p {
   padding: 60px 20px;
 }
 
-/* 🔥 FIX HERO TEXT VISIBILITY */
 .hero p {
-  color: #ffffff !important;
-  opacity: 0.95 !important;
   max-width: 650px;
   margin: 0 auto 14px;
+  color: #ffffff;
+  opacity: 0.95;
 }
 
 .hero .subtext {
   font-size: 14px;
   font-weight: 500;
   margin-top: 8px;
-  color: rgba(255, 255, 255, 0.85) !important;
-  opacity: 1 !important;
+  color: rgba(255, 255, 255, 0.85);
+  opacity: 1;
 }
 
 /* TRUST BAR */
@@ -158,13 +158,19 @@ p {
   color: white;
 }
 
-/* FOOTER */
+/* 🔥 FOOTER FIX (READABILITY ISSUE FIXED) */
 footer {
   text-align: center;
   padding: 14px;
   background: #111;
-  color: white;
+  color: #ffffff;
   font-size: 13px;
+  opacity: 0.9;
+}
+
+footer p {
+  color: #ffffff !important;
+  opacity: 0.9;
 }
 
 /* MOBILE */
