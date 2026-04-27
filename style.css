@@ -93,11 +93,11 @@ p {
   color: rgba(255, 255, 255, 0.85);
 }
 
-/* 🔥 LOGO (LARGER DESKTOP SIZE) */
+/* 🔥 LOGO (DESKTOP BIG SIZE) */
 .logo {
   display: block;
-  margin: 0 auto 14px auto;
-  max-width: 140px;
+  margin: 0 auto 16px auto;
+  max-width: 200px;
   height: auto;
 }
 
@@ -172,8 +172,9 @@ footer {
   font-size: 13px;
 }
 
-/* 📱 MOBILE */
+/* 📱 FULL MOBILE FIX */
 @media (max-width: 768px) {
+
   .grid {
     grid-template-columns: 1fr;
   }
@@ -182,7 +183,17 @@ footer {
     font-size: 28px;
   }
 
+  /* LOGO MOBILE SIZE */
   .logo {
-    max-width: 110px;
+    max-width: 150px;
+  }
+
+  /* tighter spacing for mobile readability */
+  section {
+    padding: 28px 0;
+  }
+
+  .hero {
+    padding: 50px 20px;
   }
 }
