@@ -1,4 +1,4 @@
-/* RESET */
+l/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,6 @@ body {
   background: #ffffff;
   color: #0B1F3B;
   line-height: 1.4;
-  -webkit-font-smoothing: antialiased;
 }
 
 /* CONTAINER */
@@ -45,17 +44,6 @@ section.cta h2 {
   text-align: center !important;
 }
 
-/* UNDERLINE */
-section.section h2::after,
-section.cta h2::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #F2C200;
-  margin: 8px auto 12px auto;
-}
-
 /* HERO */
 .hero {
   background: #0B1F3B;
@@ -84,7 +72,6 @@ section.cta h2::after {
   padding: 14px 20px;
 }
 
-/* TRUST TEXT FIX */
 .trust-text {
   font-weight: 700;
   color: #0B1F3B;
@@ -171,4 +158,31 @@ footer p {
   .hero {
     padding: 50px 20px;
   }
+}
+
+/* 📞 STICKY CALL BUTTON */
+.sticky-call {
+  position: fixed;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #F2C200;
+  color: #0B1F3B;
+  font-weight: 700;
+  padding: 14px 22px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  z-index: 9999;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sticky-call {
+    display: block;
+  }
+}
+
+.sticky-call:active {
+  transform: translateX(-50%) scale(0.97);
 }
