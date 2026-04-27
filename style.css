@@ -22,12 +22,12 @@ body {
   padding: 0 20px;
 }
 
-/* SECTIONS (tighter, more premium spacing) */
+/* SECTIONS */
 section {
-  padding: 30px 0;
+  padding: 35px 0;
 }
 
-/* REMOVE DEFAULT SPACING ISSUES */
+/* RESET HEADINGS */
 h1, h2, h3, p {
   margin: 0;
 }
@@ -47,32 +47,24 @@ h2 {
   margin-bottom: 8px;
 }
 
-/* FIX: CENTER SECTION HEADINGS (your request) */
-.section h2 {
-  text-align: center;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* CENTER UNDERLINE UNDER HEADINGS */
-.section h2::after {
+h2::after {
   content: "";
   display: block;
   width: 50px;
   height: 3px;
   background: #F2C200;
-  margin: 8px auto 12px auto;
+  margin-top: 6px;
+  margin-bottom: 12px;
 }
 
-/* PARAGRAPHS */
+/* PARAGRAPHS (default sections) */
 p {
   font-weight: 400;
   color: #1f2a37;
   margin-bottom: 8px;
 }
 
-/* HERO */
+/* HERO SECTION */
 .hero {
   background: #0B1F3B;
   color: white;
@@ -83,16 +75,17 @@ p {
 .hero p {
   max-width: 650px;
   margin: 0 auto 14px;
-  opacity: 0.9;
+  color: rgba(255, 255, 255, 0.9);
+  opacity: 1;
 }
 
-/* SUBTEXT */
-.subtext {
+/* HERO SUBTEXT FIX (this is what you needed) */
+.hero .subtext {
   font-size: 14px;
   font-weight: 500;
-  opacity: 0.85;
   margin-top: 8px;
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
+  opacity: 1;
 }
 
 /* TRUST BAR */
