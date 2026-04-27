@@ -93,15 +93,15 @@ p {
   color: rgba(255, 255, 255, 0.85);
 }
 
-/* LOGO (DESKTOP) */
+/* 🔥 LOGO (LARGER DESKTOP SIZE) */
 .logo {
   display: block;
-  margin: 0 auto 12px auto;
-  max-width: 110px;
+  margin: 0 auto 14px auto;
+  max-width: 140px;
   height: auto;
 }
 
-/* TRUST */
+/* TRUST BAR */
 .trust {
   text-align: center;
   padding: 10px;
@@ -172,7 +172,7 @@ footer {
   font-size: 13px;
 }
 
-/* 📱 MOBILE FIX (LOGO SIZE CONTROL) */
+/* 📱 MOBILE */
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
@@ -183,6 +183,6 @@ footer {
   }
 
   .logo {
-    max-width: 85px;
+    max-width: 110px;
   }
 }
