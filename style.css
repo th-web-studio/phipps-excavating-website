@@ -12,7 +12,6 @@ body {
   color: #0B1F3B;
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
 }
 
 /* CONTAINER */
@@ -27,23 +26,16 @@ section {
   padding: 35px 0;
 }
 
-/* TEXT RESET */
-h1, h2, h3, p {
-  margin: 0;
-}
-
 /* HEADINGS */
 h1 {
   font-size: 42px;
   font-weight: 700;
-  letter-spacing: -0.03em;
   margin-bottom: 8px;
 }
 
 h2 {
   font-size: 28px;
   font-weight: 700;
-  letter-spacing: -0.02em;
   margin-bottom: 8px;
 }
 
@@ -64,13 +56,6 @@ section.cta h2::after {
   margin: 8px auto 12px auto;
 }
 
-/* PARAGRAPHS */
-p {
-  font-weight: 400;
-  color: #1f2a37;
-  margin-bottom: 8px;
-}
-
 /* HERO */
 .hero {
   background: #0B1F3B;
@@ -83,32 +68,27 @@ p {
   max-width: 650px;
   margin: 0 auto 14px;
   color: #ffffff;
-  opacity: 0.95;
-}
-
-.hero .subtext {
-  font-size: 14px;
-  font-weight: 500;
-  margin-top: 8px;
-  color: rgba(255, 255, 255, 0.85);
 }
 
 /* LOGO */
 .logo {
-  display: block !important;
-  margin: 0 auto 16px auto !important;
-  width: 260px !important;
-  max-width: 260px !important;
-  height: auto !important;
+  display: block;
+  margin: 0 auto 16px auto;
+  width: 260px;
+  max-width: 260px;
 }
 
-/* TRUST BAR */
+/* TRUST */
 .trust {
   text-align: center;
-  padding: 10px;
-  font-weight: 600;
-  background: #fff;
-  border-bottom: 1px solid #eee;
+  padding: 14px 20px;
+}
+
+/* TRUST TEXT FIX */
+.trust-text {
+  font-weight: 700;
+  color: #0B1F3B;
+  line-height: 1.6;
 }
 
 /* BUTTONS */
@@ -117,8 +97,8 @@ p {
   padding: 12px 20px;
   margin: 6px;
   border-radius: 6px;
-  text-decoration: none;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .primary {
@@ -129,11 +109,6 @@ p {
 .secondary {
   background: white;
   color: #0B1F3B;
-}
-
-/* ALT */
-.alt {
-  background: #F5F7FA;
 }
 
 /* GRID */
@@ -149,7 +124,6 @@ p {
   padding: 18px;
   border-radius: 10px;
   border-top: 3px solid #F2C200;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
 }
 
 /* CTA */
@@ -160,14 +134,8 @@ p {
   padding: 55px 20px;
 }
 
-.cta h2 {
-  color: white;
-}
-
-/* CTA TEXT */
 .cta-text {
   color: #ffffff !important;
-  opacity: 1 !important;
 }
 
 /* FOOTER */
@@ -175,16 +143,13 @@ footer {
   text-align: center;
   padding: 14px;
   background: #111;
-  color: white;
-  font-size: 13px;
 }
 
-/* FOOTER FORCE WHITE */
 footer p {
   color: #ffffff !important;
 }
 
-/* 📱 MOBILE */
+/* MOBILE */
 @media (max-width: 768px) {
 
   .grid {
@@ -196,8 +161,7 @@ footer p {
   }
 
   .logo {
-    width: 180px !important;
-    max-width: 180px !important;
+    width: 180px;
   }
 
   section {
@@ -207,9 +171,4 @@ footer p {
   .hero {
     padding: 50px 20px;
   }
-}
-
-/* ✅ TRUST LINE FIX (FORCES PROPER LINE BREAK SUPPORT) */
-.trust p {
-  white-space: normal !important;
 }
