@@ -27,7 +27,7 @@ section {
   padding: 35px 0;
 }
 
-/* RESET TEXT */
+/* TEXT RESET */
 h1, h2, h3, p {
   margin: 0;
 }
@@ -47,14 +47,13 @@ h2 {
   margin-bottom: 8px;
 }
 
-/* CENTER SECTION HEADINGS */
+/* CENTER HEADINGS */
 section.section h2,
 section.cta h2 {
   text-align: center !important;
-  width: 100%;
 }
 
-/* CENTER UNDERLINE */
+/* UNDERLINE */
 section.section h2::after,
 section.cta h2::after {
   content: "";
@@ -65,7 +64,7 @@ section.cta h2::after {
   margin: 8px auto 12px auto;
 }
 
-/* DEFAULT PARAGRAPHS */
+/* PARAGRAPHS */
 p {
   font-weight: 400;
   color: #1f2a37;
@@ -92,10 +91,17 @@ p {
   font-weight: 500;
   margin-top: 8px;
   color: rgba(255, 255, 255, 0.85);
-  opacity: 1;
 }
 
-/* TRUST BAR */
+/* LOGO (DESKTOP) */
+.logo {
+  display: block;
+  margin: 0 auto 12px auto;
+  max-width: 110px;
+  height: auto;
+}
+
+/* TRUST */
 .trust {
   text-align: center;
   padding: 10px;
@@ -124,7 +130,7 @@ p {
   color: #0B1F3B;
 }
 
-/* ALT SECTION */
+/* ALT */
 .alt {
   background: #F5F7FA;
 }
@@ -134,7 +140,6 @@ p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 14px;
-  margin-top: 14px;
 }
 
 /* CARDS */
@@ -158,31 +163,16 @@ p {
   color: white;
 }
 
-/* 🔥 CTA TEXT FIX (YOUR ISSUE) */
-.cta p {
-  color: rgba(255, 255, 255, 0.9) !important;
-  font-weight: 500;
-  opacity: 1;
-  max-width: 600px;
-  margin: 0 auto 10px;
-}
-
 /* FOOTER */
 footer {
   text-align: center;
   padding: 14px;
   background: #111;
-  color: #ffffff;
+  color: white;
   font-size: 13px;
-  opacity: 0.9;
 }
 
-footer p {
-  color: #ffffff !important;
-  opacity: 0.9;
-}
-
-/* MOBILE */
+/* 📱 MOBILE FIX (LOGO SIZE CONTROL) */
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
@@ -190,5 +180,9 @@ footer p {
 
   h1 {
     font-size: 28px;
+  }
+
+  .logo {
+    max-width: 85px;
   }
 }
