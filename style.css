@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #0B1F3B;
+}
+
+/* HERO */
+.hero {
+  background: #0B1F3B;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.hero p {
+  opacity: 0.9;
+  max-width: 600px;
+  margin: auto;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 24px;
+  margin: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.primary {
+  background: #F2C200;
+  color: #0B1F3B;
+}
+
+.secondary {
+  background: white;
+  color: #0B1F3B;
+}
+
+/* TRUST */
+.trust {
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 20px;
+}
+
+.section.alt {
+  background: #F5F7FA;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* HEADINGS */
+h2 {
+  font-size: 32px;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #F2C200;
+  margin-top: 10px;
+}
+
+/* SERVICES GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border-top: 4px solid #F2C200;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* CTA */
+.cta {
+  background: #0B1F3B;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+}
