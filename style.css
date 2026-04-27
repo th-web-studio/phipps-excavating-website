@@ -27,7 +27,7 @@ section {
   padding: 35px 0;
 }
 
-/* RESET HEADINGS */
+/* RESET HEADINGS + TEXT */
 h1, h2, h3, p {
   margin: 0;
 }
@@ -57,7 +57,7 @@ h2::after {
   margin-bottom: 12px;
 }
 
-/* PARAGRAPHS (default sections) */
+/* DEFAULT PARAGRAPHS */
 p {
   font-weight: 400;
   color: #1f2a37;
@@ -72,20 +72,21 @@ p {
   padding: 60px 20px;
 }
 
+/* 🔥 FIXED HERO TEXT VISIBILITY (MAIN ISSUE FIX) */
 .hero p {
+  color: #ffffff !important;
+  opacity: 0.95 !important;
   max-width: 650px;
   margin: 0 auto 14px;
-  color: rgba(255, 255, 255, 0.9);
-  opacity: 1;
 }
 
-/* HERO SUBTEXT FIX (this is what you needed) */
+/* HERO SUBTEXT */
 .hero .subtext {
   font-size: 14px;
   font-weight: 500;
   margin-top: 8px;
-  color: rgba(255, 255, 255, 0.8);
-  opacity: 1;
+  color: rgba(255, 255, 255, 0.85) !important;
+  opacity: 1 !important;
 }
 
 /* TRUST BAR */
