@@ -93,12 +93,13 @@ p {
   color: rgba(255, 255, 255, 0.85);
 }
 
-/* 🔥 LOGO (DESKTOP BIG SIZE) */
+/* 🔥 LOGO - FORCE SIZE (THIS IS THE IMPORTANT FIX) */
 .logo {
-  display: block;
-  margin: 0 auto 16px auto;
-  max-width: 200px;
-  height: auto;
+  display: block !important;
+  margin: 0 auto 16px auto !important;
+  width: 260px !important;
+  max-width: 260px !important;
+  height: auto !important;
 }
 
 /* TRUST BAR */
@@ -172,7 +173,7 @@ footer {
   font-size: 13px;
 }
 
-/* 📱 FULL MOBILE FIX */
+/* 📱 MOBILE */
 @media (max-width: 768px) {
 
   .grid {
@@ -183,12 +184,12 @@ footer {
     font-size: 28px;
   }
 
-  /* LOGO MOBILE SIZE */
+  /* LOGO MOBILE FORCE SIZE */
   .logo {
-    max-width: 150px;
+    width: 180px !important;
+    max-width: 180px !important;
   }
 
-  /* tighter spacing for mobile readability */
   section {
     padding: 28px 0;
   }
