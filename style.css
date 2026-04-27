@@ -27,7 +27,7 @@ section {
   padding: 35px 0;
 }
 
-/* RESET HEADINGS + TEXT */
+/* RESET TEXT */
 h1, h2, h3, p {
   margin: 0;
 }
@@ -47,24 +47,31 @@ h2 {
   margin-bottom: 8px;
 }
 
-h2::after {
+/* ✅ PROPER CENTERING FIX (stable + clean) */
+.section h2,
+.cta h2 {
+  text-align: center;
+}
+
+/* underline centered correctly */
+.section h2::after,
+.cta h2::after {
   content: "";
   display: block;
   width: 50px;
   height: 3px;
   background: #F2C200;
-  margin-top: 6px;
-  margin-bottom: 12px;
+  margin: 8px auto 12px auto;
 }
 
-/* DEFAULT PARAGRAPHS */
+/* PARAGRAPHS */
 p {
   font-weight: 400;
   color: #1f2a37;
   margin-bottom: 8px;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
   background: #0B1F3B;
   color: white;
@@ -72,7 +79,7 @@ p {
   padding: 60px 20px;
 }
 
-/* 🔥 FIXED HERO TEXT VISIBILITY (MAIN ISSUE FIX) */
+/* 🔥 FIX HERO TEXT VISIBILITY */
 .hero p {
   color: #ffffff !important;
   opacity: 0.95 !important;
@@ -80,7 +87,6 @@ p {
   margin: 0 auto 14px;
 }
 
-/* HERO SUBTEXT */
 .hero .subtext {
   font-size: 14px;
   font-weight: 500;
