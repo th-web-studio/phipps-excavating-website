@@ -9,7 +9,7 @@ body {
   font-family: Arial, sans-serif;
   background: #ffffff;
   color: #0B1F3B;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 /* CONTAINER */
@@ -19,30 +19,67 @@ body {
   padding: 0 20px;
 }
 
-/* HERO */
+/* =========================
+   SPACING SYSTEM (KEY FIX)
+   This controls ALL vertical spacing
+========================= */
+section {
+  padding: 60px 0;
+}
+
+/* remove extra spacing inside sections */
+h1, h2, h3, p {
+  margin: 0;
+}
+
+/* controlled spacing ONLY */
+h1 {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 3px;
+  background: #F2C200;
+  margin-top: 8px;
+  margin-bottom: 18px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* =========================
+   HERO
+========================= */
 .hero {
   background: #0B1F3B;
   color: white;
   text-align: center;
-  padding: 100px 20px;
-}
-
-.hero h1 {
-  font-size: 42px;
-  margin-bottom: 15px;
+  padding: 80px 20px;
 }
 
 .hero p {
   max-width: 650px;
-  margin: 0 auto 25px;
+  margin: 0 auto 18px;
   opacity: 0.9;
 }
 
-/* BUTTONS */
+/* =========================
+   BUTTONS
+========================= */
 .btn {
   display: inline-block;
-  padding: 14px 24px;
-  margin: 10px;
+  padding: 12px 22px;
+  margin: 8px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
@@ -58,93 +95,75 @@ body {
   color: #0B1F3B;
 }
 
-/* TRUST BAR */
+/* =========================
+   TRUST BAR
+========================= */
 .trust {
   text-align: center;
-  padding: 15px;
-  font-weight: bold;
+  padding: 12px;
+  font-weight: 600;
   background: #fff;
   border-bottom: 1px solid #eee;
 }
 
-/* SECTIONS */
-.section {
-  padding: 80px 20px;
-}
-
-.section.alt {
-  background: #F5F7FA;
-}
-
-/* HEADINGS */
-h1, h2, h3 {
-  color: #0B1F3B;
-}
-
-h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-h2::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 4px;
-  background: #F2C200;
-  margin-top: 10px;
-}
-
-/* GRID */
+/* =========================
+   SERVICES GRID
+========================= */
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  margin-top: 30px;
+  gap: 18px;
+  margin-top: 20px;
 }
 
 /* CARDS */
 .card {
   background: white;
-  padding: 25px;
+  padding: 20px;
   border-radius: 10px;
   border-top: 4px solid #F2C200;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
-/* CTA */
+/* ALT SECTION */
+.alt {
+  background: #F5F7FA;
+}
+
+/* =========================
+   CTA
+========================= */
 .cta {
   background: #0B1F3B;
   color: white;
   text-align: center;
-  padding: 80px 20px;
+  padding: 70px 20px;
 }
 
 .cta h2 {
   color: white;
 }
 
-.cta p {
-  opacity: 0.9;
-  margin-bottom: 20px;
-}
-
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 16px;
   background: #111;
   color: white;
-  font-size: 14px;
+  font-size: 13px;
 }
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================= */
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
   }
 
-  .hero h1 {
-    font-size: 32px;
+  h1 {
+    font-size: 30px;
   }
 }
