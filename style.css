@@ -1,110 +1,120 @@
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phipps Excavating & Land Management</title>
 
-/* BASE */
-body {
-  font-family: 'Inter', sans-serif;
-  background: #ffffff;
-  color: #0B1F3B;
-  line-height: 1.4;
-}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-/* CONTAINER */
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 0 20px;
-}
+  <link rel="stylesheet" href="style.css">
+</head>
 
-/* SECTIONS */
-section {
-  padding: 35px 0;
-}
+<body>
 
-/* HEADINGS */
-h1 {
-  font-size: 42px;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
 
-h2 {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
+      <img class="logo" src="logo.jpg" alt="Phipps Excavating Logo">
 
-/* CENTER HEADINGS */
-section.section h2,
-section.cta h2 {
-  text-align: center !important;
-}
+      <h1>Phipps Excavating & Land Management</h1>
 
-/* UNDERLINE */
-section.section h2::after,
-section.cta h2::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #F2C200;
-  margin: 8px auto 12px auto;
-}
+      <p>
+        Over 20 years of experience providing excavation, land clearing, drainage, and site preparation services in West Liberty, KY.
+      </p>
 
-/* HERO */
-.hero {
-  background: #0B1F3B;
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
-}
+      <a class="btn primary" href="tel:6065480377">Call Now</a>
 
-.hero p {
-  max-width: 650px;
-  margin: 0 auto 14px;
-  color: #ffffff;
-  opacity: 0.95;
-}
+      <a class="btn secondary" href="https://www.facebook.com/share/18ZudgQdAv/?mibextid=wwXIfr" target="_blank">
+        Message Us
+      </a>
 
-.hero .subtext {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.85);
-}
+      <p class="subtext">Fast responses via call or Facebook message</p>
 
-/* LOGO */
-.logo {
-  display: block;
-  margin: 0 auto 16px auto;
-  width: 260px;
-  max-width: 260px;
-}
+    </div>
+  </section>
 
-/* TRUST */
-.trust {
-  text-align: center;
-  padding: 10px;
-  font-weight: 600;
-}
+  <!-- TRUST -->
+  <section class="trust">
+    <p>20+ Years Experience • Locally Owned • Fully Insured • Professional Equipment</p>
+  </section>
 
-/* BUTTONS */
-.btn {
-  display: inline-block;
-  padding: 12px 20px;
-  margin: 6px;
-  border-radius: 6px;
-  font-weight: 600;
-  text-decoration: none;
-}
+  <!-- ABOUT -->
+  <section class="section">
+    <div class="container">
 
-.primary {
-  background: #F2C200;
-  color: #0B1F3B;
-}
+      <h2>Built on Experience. Defined by Precision.</h2>
 
-.secondary {
-  background: white;
-  color: #0
+      <p>
+        Phipps Excavating & Land Management delivers professional excavation services across West Liberty, Kentucky and surrounding areas.
+      </p>
+
+      <p>
+        We specialize in land clearing, dirt work, brush cutting, ditching, drainage solutions, and driveway repair.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section alt">
+    <div class="container">
+
+      <h2>Core Services</h2>
+
+      <div class="grid">
+
+        <div class="card">
+          <h3>Excavation</h3>
+          <p>Site prep, grading, and digging services.</p>
+        </div>
+
+        <div class="card">
+          <h3>Land Clearing</h3>
+          <p>Brush, trees, and lot clearing.</p>
+        </div>
+
+        <div class="card">
+          <h3>Drainage</h3>
+          <p>Ditching and water flow control solutions.</p>
+        </div>
+
+        <div class="card">
+          <h3>Driveways</h3>
+          <p>Gravel driveway installation and repair.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+
+      <h2>Ready to Start Your Project?</h2>
+
+      <p class="cta-text">
+        Call now or message us on Facebook for a free estimate.
+      </p>
+
+      <a class="btn primary" href="tel:6065480377">Call Now</a>
+
+      <a class="btn secondary" href="https://www.facebook.com/share/18ZudgQdAv/?mibextid=wwXIfr" target="_blank">
+        Message Us
+      </a>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Phipps Excavating & Land Management</p>
+  </footer>
+
+</body>
+</html>
