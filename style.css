@@ -1,4 +1,4 @@
-/* RESET */
+/* RESET (IMPORTANT) */
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +9,7 @@ body {
   font-family: Arial, sans-serif;
   background: #ffffff;
   color: #0B1F3B;
-  line-height: 1.4;
+  line-height: 1.35;
 }
 
 /* CONTAINER */
@@ -20,57 +20,77 @@ body {
 }
 
 /* =========================
-   SPACING SYSTEM (KEY FIX)
-   This controls ALL vertical spacing
+   GLOBAL SPACING CONTROL (KEY FIX)
 ========================= */
-section {
-  padding: 60px 0;
-}
 
-/* remove extra spacing inside sections */
+/* REMOVE ALL DEFAULT HEADING SPACING */
 h1, h2, h3, p {
-  margin: 0;
+  margin-top: 0 !important;
+  margin-bottom: 0;
 }
 
-/* controlled spacing ONLY */
+/* FORCE CONTROLLED SPACING ONLY BELOW ELEMENTS */
 h1 {
   font-size: 42px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 h2 {
   font-size: 30px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
+/* REMOVE TOP GAP ABOVE HEADERS COMPLETELY */
+h1, h2, h3 {
+  padding-top: 0;
+}
+
+/* CLEAN UNDERLINE */
 h2::after {
   content: "";
   display: block;
-  width: 55px;
+  width: 50px;
   height: 3px;
   background: #F2C200;
-  margin-top: 8px;
-  margin-bottom: 18px;
+  margin-top: 6px;
+  margin-bottom: 12px;
 }
 
+/* PARAGRAPHS */
 p {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 /* =========================
-   HERO
+   SECTIONS (TIGHT MODE)
 ========================= */
+
+/* THIS IS WHAT WAS CAUSING MOST OF YOUR WHITESPACE */
+section {
+  padding: 35px 0;
+}
+
+/* HERO (LESS TOP AIR) */
 .hero {
   background: #0B1F3B;
   color: white;
   text-align: center;
-  padding: 80px 20px;
+  padding: 60px 20px;
 }
 
 .hero p {
   max-width: 650px;
-  margin: 0 auto 18px;
+  margin: 0 auto 14px;
   opacity: 0.9;
+}
+
+/* TRUST BAR (VERY TIGHT) */
+.trust {
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  background: #fff;
+  border-bottom: 1px solid #eee;
 }
 
 /* =========================
@@ -78,8 +98,8 @@ p {
 ========================= */
 .btn {
   display: inline-block;
-  padding: 12px 22px;
-  margin: 8px;
+  padding: 12px 20px;
+  margin: 6px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
@@ -96,33 +116,22 @@ p {
 }
 
 /* =========================
-   TRUST BAR
-========================= */
-.trust {
-  text-align: center;
-  padding: 12px;
-  font-weight: 600;
-  background: #fff;
-  border-bottom: 1px solid #eee;
-}
-
-/* =========================
    SERVICES GRID
 ========================= */
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
-  margin-top: 20px;
+  gap: 14px;
+  margin-top: 14px;
 }
 
 /* CARDS */
 .card {
   background: white;
-  padding: 20px;
+  padding: 18px;
   border-radius: 10px;
-  border-top: 4px solid #F2C200;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  border-top: 3px solid #F2C200;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
 }
 
 /* ALT SECTION */
@@ -137,7 +146,7 @@ p {
   background: #0B1F3B;
   color: white;
   text-align: center;
-  padding: 70px 20px;
+  padding: 55px 20px;
 }
 
 .cta h2 {
@@ -149,7 +158,7 @@ p {
 ========================= */
 footer {
   text-align: center;
-  padding: 16px;
+  padding: 14px;
   background: #111;
   color: white;
   font-size: 13px;
@@ -164,6 +173,6 @@ footer {
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
